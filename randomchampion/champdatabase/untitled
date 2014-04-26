@@ -1,0 +1,15 @@
+champ_dict = {
+"Aatrox":"J", "T",
+"Ahri":"M",
+"Akali":"M",
+"Alistar":"S",
+"Amumu":"J",
+"Anivia":"M",
+"Annie":"M", "S",
+"Ashe":"A",
+"Blitzcrank":"S",
+"Brand":"M",
+"Caitlyn":"A",
+"Cassiopeia":"M",
+"Cho'gath":"T","J",
+}	

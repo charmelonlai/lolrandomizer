@@ -1,0 +1,18 @@
+{% load bootstrap3 %}
+{% load staticfiles %}
+
+{% load champ_tags %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.css" %}" type="text/css">
+<link rel="stylesheet" href="{% static "css/flat-ui.css" %}" type="css">
+<link rel="stylesheet" href="{% static "css/style-champ.css" %}" type="css">
+{% endblock %}
+
+{% block content %}
+<div id = "header" class = "header">
+	<h1> {{ champion.name }} </h1>
+	<h4> {{ champion.title }} </h4>
+</div>
+
+{% endblock %}

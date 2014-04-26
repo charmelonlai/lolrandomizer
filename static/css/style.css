@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP", 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+}
+
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 200;
+}
+
+.vert-text span {
+  font-style: italic;
+  font-size: 1.07em;
+}
+
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  margin-top: -70px;
+  font-size: 90px;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family:  "Lucida Grande", "Lucida Sans Unicode", "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP", 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-weight: 300;
+}
+.vert-text h2 {
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /*background: url("images/bg.png") no-repeat center center fixed;*/
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  color: #fff;
+}

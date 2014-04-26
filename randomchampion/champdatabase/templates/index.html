@@ -1,0 +1,44 @@
+{% load bootstrap3 %}
+{% load staticfiles %}
+
+
+{% block head %}
+
+<html lang = "en">
+<head>
+	<title> Random Champion </title>
+	<meta content = "text/html; charset = UTF-8" http-equiv="Content-Type">
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+</head>
+
+<link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.css" %}" type="text/css">
+<link rel="stylesheet" href="{% static "css/style.css" %}" type="css">
+<link rel="stylesheet" href="{% static "css/flat-ui.css" %}" type="css">
+
+{% endblock %}
+
+{% block content %}
+<div id = "header" class = "header">
+	<div class = "vert-text">
+		<h1> Champion Randomizer </h1>
+		<ul> 
+			<form id = "choose_champion_form" method = "post" >
+				{% csrf_token %} 
+				<input type="submit" name="submit" value="Random" />
+			</form>
+			<div class="btn-group">
+  				<form id = "choose_champion_form" method = "post1" >
+					{% csrf_token %} 
+					<input type="submit" name="submit" value="Jungle" />
+				</form>
+  				<button type="button" class="btn btn-default">Jungle</button>
+  				<button type="button" class="btn btn-default">Mid Lane</button>
+  				<button type="button" class="btn btn-default">Marksman</button>
+  				<button type="button" class="btn btn-default">Support</button>
+			</div>
+		</ul>
+	</div>
+</div>
+
+
+{% endblock %}

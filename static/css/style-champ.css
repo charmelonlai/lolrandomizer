@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP", 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h4,
+.h4 {
+  font-size: 50px;
+}
+
+h1,
+.h1 {
+	font-size: 250px;
+	line-height: 65%;
+	padding-top: 10cm;
+}
