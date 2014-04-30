@@ -10,9 +10,51 @@
 {% endblock %}
 
 {% block content %}
+
+<div class = "navbar navbar-default navbar-fixed-top transparent">
+	<div class = "container">
+		<div class="navbar-header">
+		</div>
+		<div class= "collapse navbar-collapse">
+			<ul class = "nav navbar-nav navbar-right">
+				<li><h3> <form id = "choose_champion_form" method = "post" action = "/all/" >
+				{% csrf_token %} 
+				<input type="submit" name="submit" value="All" class = "btn btn-default" />
+			</form> </h3></li>
+				<li><h3> <form id = "choose_top_form" method = "post" action = "/top/" >
+				{% csrf_token %} 
+				<input type="submit" name="submit" value="Top" class = "btn btn-default" />
+			</form> </h3></li>
+				<li><h3> <form id = "choose_jungle_form" method = "post" action ="/jungler/" >
+				{% csrf_token %} 
+				<input type="submit" name="submit" value="Jungle" class = "btn btn-default" />
+			</form> </h3></li>
+				<li><h3> <form id = "choose_mid_form" method = "post" action = "/mid/" >
+				{% csrf_token %} 
+				<input type="submit" name="submit" value="Mid" class = "btn btn-default" />
+			</form> </h3></li>
+				<li><h3> <form id = "choose_ad_form" method = "post" action = "/marksman/" >
+				{% csrf_token %} 
+				<input type="submit" name="submit" value="Marksman" class = "btn btn-default" />
+			</form> </h3></li>
+				<li><h3> <form id = "choose_support_form" method = "post" action = "/support/" >
+				{% csrf_token %} 
+				<input type="submit" name="submit" value="Support" class = "btn btn-default" />
+			</form> </h3></li>
+		</div>
+	</div>
+</div>
+
 <div id = "header" class = "header">
-	<h1> {{ champion.name }} </h1>
-	<h4> {{ champion.title }} </h4>
+		<style>
+			.header {
+				background-image:url(' {{ champion.splash.url }}');
+				background-repeat:no-repeat;
+				background-size:100%;
+			}
+		</style>
+		<h1> {{ champion.name }} </h1>
+		<h4> {{ champion.title }} </h4>
 </div>
 
 {% endblock %}

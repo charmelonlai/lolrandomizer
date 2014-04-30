@@ -4,6 +4,7 @@
 
 {% block head %}
 
+<!DOCTYPE html>
 <html lang = "en">
 <head>
 	<title> Random Champion </title>
@@ -12,31 +13,43 @@
 </head>
 
 <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.css" %}" type="text/css">
-<link rel="stylesheet" href="{% static "css/style.css" %}" type="css">
 <link rel="stylesheet" href="{% static "css/flat-ui.css" %}" type="css">
+<link rel="stylesheet" href="{% static "css/style.css" %}" type="css">
 
 {% endblock %}
 
 {% block content %}
 <div id = "header" class = "header">
 	<div class = "vert-text">
-		<h1> Champion Randomizer </h1>
-		<ul> 
-			<form id = "choose_champion_form" method = "post" >
-				{% csrf_token %} 
-				<input type="submit" name="submit" value="Random" />
-			</form>
-			<div class="btn-group">
-  				<form id = "choose_champion_form" method = "post1" >
+		<h1> WHAT THE FUCK SHOULD I PLAY </h1>
+			<div class = "btn-group">	
+			<div class = "nav navbar-nav">
+				<li><form id = "choose_form" method = "post" action = "/all/" >
 					{% csrf_token %} 
-					<input type="submit" name="submit" value="Jungle" />
-				</form>
-  				<button type="button" class="btn btn-default">Jungle</button>
-  				<button type="button" class="btn btn-default">Mid Lane</button>
-  				<button type="button" class="btn btn-default">Marksman</button>
-  				<button type="button" class="btn btn-default">Support</button>
+					<input type="submit" name="submit" value="ALL" class = "btn btn-default" />
+				</form></li>
+				<li><form id = "choose_form" method = "post" action = "/top/">
+					{% csrf_token %} 
+					<input type="submit" name="submit" value="TOP" class = "btn btn-default" />
+				</form></li>
+	  			<li><form id = "choose_form" method = "post" action = "/jungler/">
+					{% csrf_token %} 
+					<input type="submit" name="submit" value="JUNGLE" class = "btn btn-default" />
+				</form></li>
+				<li><form id = "choose_form" method = "post" action = "/mid/">
+					{% csrf_token %} 
+					<input type="submit" name="submit" value="MID" class = "btn btn-default" />
+				</form></li>
+				<li><form id = "choose_form" method = "post" action = "/marksman/">
+					{% csrf_token %} 
+					<input type="submit" name="submit" value="MARKSMAN" class = "btn btn-default" />
+				</form></li>
+				<li><form id = "choose_form" method = "post" action = "/support/">
+					{% csrf_token %} 
+					<input type="submit" name="submit" value="SUPPORT" class = "btn btn-default" />
+				</form></li>
 			</div>
-		</ul>
+			</div>
 	</div>
 </div>
 

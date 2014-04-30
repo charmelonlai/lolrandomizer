@@ -1,4 +1,4 @@
-/*!
+ /*!
  * Bootstrap v3.1.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -3814,11 +3814,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
+  display: inline-block;
+  float: none;
     margin: 0;
   }
   .navbar-nav > li {
-    float: left;
+  display: inline-block;
+  float: none;
   }
   .navbar-nav > li > a {
     padding-top: 15px;

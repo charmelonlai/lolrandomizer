@@ -29,6 +29,10 @@ TEMPLATE_DIR = (
 
 ALLOWED_HOSTS = []
 
+MEDIA_ROOT = ('static'
+    )
+
+MEDIA_URL = '/splash/'
 
 # Application definition
 

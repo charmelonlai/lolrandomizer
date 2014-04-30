@@ -12,12 +12,46 @@ body {
 
 h4,
 .h4 {
-  font-size: 50px;
+  font-size: 40px;
+  color:#B8B8B8;
+  margin-left:10px;
 }
 
 h1,
 .h1 {
-	font-size: 250px;
-	line-height: 65%;
-	padding-top: 10cm;
+	font-size: 180px;
+	line-height: 62%;
+	padding-top: 11cm;
+	color:#fff;
+	margin-left:1px;
+	/*text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  */
+}
+
+h3,
+.h3 {
+	font-size:15px;
+	color:#fff; 
+
+}
+
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
+
+.transparent {
+	background-color: transparent;
+	border: none;
+}
+
+.btn {
+	background-color: transparent;
+	margin-top: -30px;
+}
 }
