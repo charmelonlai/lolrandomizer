@@ -63,3 +63,17 @@ h4,
 .navbar .navbar-collapse {
   text-align: center;
 }
+
+.transparent {
+  background-color: transparent;
+  border: none;
+}
+
+h4 {
+  font-size:.9em;
+}
+
+.btn {
+  color: #000000;
+}
+
